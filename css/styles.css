@@ -28,14 +28,14 @@ img {
   height: auto;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+a {
+  text-decoration: none;
+  display: block;
 }
 
 /* Section */
@@ -95,11 +95,11 @@ img {
   text-decoration: none;
   padding-bottom: 25px;
   padding-top: 24px;
+  margin-right: 93px;
 }
 
 .logo-header {
   color: #000000;
-  margin-right: 93px;
 }
 
 /* Site nav */
@@ -154,7 +154,7 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding: 200px 452px;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -198,13 +198,11 @@ img {
 .features {
   display: flex;
   margin-left: calc(-1 * var(--margin-set-gap));
-  margin-top: calc(-1 * var(--margin-set-gap));
 }
 
 .features-item {
   flex-basis: calc(100% / 4 - var(--margin-set-gap));
   margin-left: var(--margin-set-gap);
-  margin-top: var(--margin-set-gap);
 }
 
 .features-title {
@@ -230,16 +228,14 @@ img {
 .works {
   display: flex;
   margin-left: calc(-1 * var(--margin-set-gap));
-  margin-top: calc(-1 * var(--margin-set-gap));
 }
 .works-item {
   flex-basis: calc(100% / 3 - var(--margin-set-gap));
   margin-left: var(--margin-set-gap);
-  margin-top: var(--margin-set-gap);
 }
 
 .section-works {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .works-title {
   color: var(--primary-text-color);
@@ -255,13 +251,11 @@ img {
 .command {
   display: flex;
   margin-left: calc(-1 * var(--margin-set-gap));
-  margin-top: calc(-1 * var(--margin-set-gap));
 }
 
 .command-item {
   flex-basis: calc(100% / 4 - var(--margin-set-gap));
   margin-left: var(--margin-set-gap);
-  margin-top: var(--margin-set-gap);
 }
 
 .command-item-bottom {
@@ -316,11 +310,10 @@ img {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .logo-footer {
   color: var(--rare-color);
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 /* Footer Address */
@@ -330,8 +323,9 @@ img {
   line-height: 1.71;
   font-style: normal;
 }
-.link {
-  text-decoration: none;
+
+.footer-contact-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts-link-footer:hover,
@@ -341,14 +335,10 @@ img {
 
 .location-link {
   color: var(--rare-color);
-  display: inline-block;
-  margin-bottom: 9px;
 }
 
 .mail-footer {
   color: rgba(255, 255, 255, 0.6);
-  display: inline-block;
-  margin-bottom: 9px;
 }
 .phone-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -359,7 +349,6 @@ img {
 /* POTFOLIO Buttons  */
 .filter {
   margin-bottom: 50px;
-  align-items: center;
   display: flex;
   justify-content: center;
 }
